@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Man's Brain Quest - Welcome!</title>
+    <style>
+      
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            min-height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .left-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 24px;
+        }
+
+        .right-section {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            background: linear-gradient(45deg, #fff, #f0f0f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 24px;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .start-btn {
+            display: inline-block;
+            padding: 16px 32px;
+            background: linear-gradient(45deg, #00f260, #0575e6);
+            border: none;
+            border-radius: 50px;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            text-align: center;
+            margin-top: 24px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .start-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .developer-info {
+            margin-top: auto;
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .right-section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container animate__animated animate__fadeIn">
+        <div class="left-section">
+            <div>
+                <h1>A-Man's Brain Quest</h1>
+                <p class="tagline">Challenge your mind with logic, reasoning, and aptitude puzzles.</p>
+            </div>
+            
+            <div class="feature-card animate__animated animate__fadeInLeft">
+                <div class="feature-title">🎯 Three Difficulty Levels</div>
+                <p>Basic Logic, Advanced Reasoning, and Expert Analysis to match your skills.</p>
+            </div>
+
+            <div class="feature-card animate__animated animate__fadeInLeft" style="animation-delay: 0.2s">
+                <div class="feature-title">⏳ Time-Based Challenges</div>
+                <p>Test your quick thinking with our 60-second countdown timer.</p>
+            </div>
+
+            <div class="feature-card animate__animated animate__fadeInLeft" style="animation-delay: 0.4s">
+                <div class="feature-title">🏆 Track Your Progress</div>
+                <p>Build streaks and compete with yourself to achieve higher scores.</p>
+            </div>
+
+            <a href="https://aman00369.github.io/Brain-Quest-Game/" class="start-btn animate__animated animate__fadeInUp" style="animation-delay: 0.6s">
+                Start Your Quest
+            </a>
+        </div>
+
+        <div class="right-section animate__animated animate__fadeInRight">
+            <div class="feature-card">
+                <div class="feature-title">🧠 Cognitive Development</div>
+                <p>Enhance your logical reasoning, analytical thinking, and problem-solving abilities through engaging challenges.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-title">📱 Access Anywhere</div>
+                <p>Play on any device with a web browser. Perfect for learning on the go!</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-title">📊 Instant Feedback</div>
+                <p>Learn from your mistakes with immediate visual feedback on your answers.</p>
+            </div>
+
+            <div class="developer-info animate__animated animate__fadeInUp" style="animation-delay: 0.8s">
+                <p>Created by Aman Khan</p>
+                <p>BSc Honours Computer Science</p>
+                <p>Bhairab Ganguly College, Kolkata</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
